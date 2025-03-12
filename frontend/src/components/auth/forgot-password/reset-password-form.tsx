@@ -10,7 +10,7 @@ export default function ResetPasswordForm() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const navigate = useNavigate();
-  const token = searchParams.get("token");
+  // const token = searchParams.get("token");
 
   // Update URL when step changes while preserving the token
   useEffect(() => {
