@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
-import authService from "../../../services/authService";
+import authService from "../../../api/authApi";
 import { toast } from "react-hot-toast";
 
 // Verification Code Component

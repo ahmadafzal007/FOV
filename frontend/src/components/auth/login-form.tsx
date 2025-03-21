@@ -2,7 +2,7 @@ import type React from "react";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import google from "../../assets/google.svg";
-import authService from "../../services/authService";
+import authService from "../../api/authApi";
 import { toast } from "react-hot-toast";
 
 export default function LoginForm() {

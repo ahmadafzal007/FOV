@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
-import authService from "../../../services/authService";
+import authService from "../../../api/authApi";
 import { toast } from "react-hot-toast";
 
 export default function ResetPasswordForm() {
