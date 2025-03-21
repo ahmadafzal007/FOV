@@ -13,7 +13,8 @@ import Game from "./pages/in-game-visualizer";
 import UploadGame from "./pages/in-game-visualizer2";
 import Campaign from "./pages/cart";
 import CampaignDetails from "./pages/cart2";
-import UserProfile from "./pages/Profile/userProfile";
+import UserProfile from "./pages/user-profile";
+
 function App() {
   return (
     <Router>
@@ -27,13 +28,17 @@ function App() {
         <Route path="/forgot-password" element={<ForgotPasswordPage />} />
         <Route path="/reset-password" element={<ResetPasswordPage />} />
         <Route path="/email-verification" element={<EmailVerificationPage />} />
+        
+        {/* {user routes} */}
+        <Route path="/profile" element={<UserProfile />} />
+   
 
+   
         {/* Other routes */}
         <Route path="/dashboard" element={<Game />} />
         <Route path="/upload-game" element={<UploadGame />} />
         <Route path="/campaigns" element={<Campaign />} />
         <Route path="/campaign-details" element={<CampaignDetails />} />
-        <Route path="/profile" element={<UserProfile />} />
       </Routes>
     </Router>
   );
